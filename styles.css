@@ -33,10 +33,6 @@ body.dark-mode {
     margin-bottom: 20px;
 }
 
-.bingo-row {
-    display: flex;
-}
-
 .bingo-cell {
     width: 50px;
     height: 50px;
@@ -47,6 +43,7 @@ body.dark-mode {
     border: 2px solid #333;
     font-size: 20px;
     cursor: pointer;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
 }
 
 body.dark-mode .bingo-cell {
