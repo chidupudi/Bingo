@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.mode-selection, .theme-toggle {
+    margin-bottom: 20px;
+}
+
+.mode-selection button, .theme-toggle button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.bingo-board {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(5, 50px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.bingo-row {
+    display: flex;
+}
+
+.bingo-cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #333;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+body.dark-mode .bingo-cell {
+    background-color: #555;
+    border-color: #fff;
+}
+
+.bingo-cell.marked {
+    background-color: #ff0;
+}
+
+.status {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.reset-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mode-selection">
+        <button onclick="setMode('local')">Local Multiplayer</button>
+        <button onclick="setMode('ai', 'easy')">Play with AI (Easy)</button>
+        <button onclick="setMode('ai', 'medium')">Play with AI (Medium)</button>
+        <button onclick="setMode('ai', 'hard')">Play with AI (Hard)</button>
+    </div>
+    <div class="theme-toggle">
+        <button onclick="toggleTheme()">Toggle Dark Mode</button>
+    </div>
+    <div class="bingo-board" id="bingoBoard"></div>
+    <div class="status" id="status"></div>
+    <button class="reset-button" onclick="resetGame()">Reset Game</button>
+    <script src="script.js"></script>
+</body>
+</html>
