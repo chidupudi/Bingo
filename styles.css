@@ -51,6 +51,7 @@ body.dark-mode .bingo-cell {
     border-color: #fff;
 }
 
+
 .bingo-cell.marked {
     background-color:  #ff0;
 }
