@@ -55,7 +55,7 @@ function handleCellClick(row, col, board) {
         board[row][col].marked = true;
         renderBoard(playerBoard, bingoBoard);
         checkWin(playerBoard, 'Player');
-        handlePlayerChange();
+        handlePlayerChange(); 
     }
 }
 
