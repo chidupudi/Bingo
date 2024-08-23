@@ -69,7 +69,8 @@ function handlePlayerChange() {
 
 
 function aiPlay() {
-    if (difficulty === 'easy') { 
+    if (difficulty === 'easy') 
+        { 
         aiEasy();
     } else if (difficulty === 'medium') {
         aiMedium();
