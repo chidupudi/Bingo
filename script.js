@@ -59,6 +59,9 @@ function handleCellClick(row, col, board) {
     }
 }
 
+
+
+
 function handlePlayerChange() {
     currentPlayer = currentPlayer === "Player" ? "AI" : "Player";
     statusDisplay.innerHTML = `It's ${currentPlayer}'s turn`;
