@@ -5,6 +5,7 @@ let currentPlayer = "Player";
 let gameMode = null;
 let difficulty = null;
 
+
 const bingoSize = 5;
 let playerBoard = [];
 let aiBoard = [];
